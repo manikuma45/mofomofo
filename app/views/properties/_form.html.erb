@@ -36,6 +36,25 @@
     <%= form.text_area :description %>
   </div>
 
+  <div class= "station">
+    <table>
+      <thead>
+        <tr>
+        <th>路線名</th>
+        <th>駅名</th>
+        <th>徒歩分数</th>
+      <th></th>
+        </tr>
+      </thead>
+      <tbody id="order-details">
+        <%= form.fields_for :stations do |station| %>
+        <%= render 'station_fields', f: station %>
+        <% end %>
+      </tbody>
+    </table>
+    <h3><%= link_to_add_association '最寄駅を追加', form, :stations %></h3>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

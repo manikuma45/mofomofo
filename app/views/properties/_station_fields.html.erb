@@ -1,0 +1,15 @@
+<tr class="nested-fields">
+  <td>
+  	<%= f.label :路線名 %>
+  	<%= f.text_field :line_name %>
+  	</td>
+  <td>
+  	<%= f.label :駅名 %>
+  	<%= f.text_field :sta_name %>
+  	</td>
+  <td>
+  	<%= f.label :徒歩分数 %>
+  	<%= f.text_field :minute_on_foot %>
+  </td>
+  <td><%= link_to_remove_association "削除", f %></td>
+</tr>
