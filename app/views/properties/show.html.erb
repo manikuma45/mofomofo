@@ -24,6 +24,17 @@
   <strong>Description:</strong>
   <%= @property.description %>
 </p>
-
+<div class="station">
+<% if @property.stations.present? %>
+<% @property.stations.each.with_index do |element, index|%>
+<%index = index + 1%>
+<h3>最寄駅<%="#{index}"%></h3>
+<P><%= "路線名:#{element.line_name}"%></P>
+<p><%= "駅名:#{element.sta_name}"  %></p>
+<p><%= "徒歩何分:#{element.minute_on_foot}分"%></p>
+<% end %>
+<% end %>
 <%= link_to 'Edit', edit_property_path(@property) %> |
 <%= link_to 'Back', properties_path %>
+</div>
+
