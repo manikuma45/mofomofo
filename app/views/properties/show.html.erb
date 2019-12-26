@@ -24,6 +24,7 @@
   <strong>Description:</strong>
   <%= @property.description %>
 </p>
+<<<<<<< HEAD
 <div class="station">
 <% if @property.stations.present? %>
 <% @property.stations.each.with_index do |element, index|%>
@@ -38,3 +39,8 @@
 <%= link_to 'Back', properties_path %>
 </div>
 
+=======
+
+<%= link_to 'Edit', edit_property_path(@property) %> |
+<%= link_to 'Back', properties_path %>
+>>>>>>> 66b6dc6... scaffoldによる物件登録機能の作成
