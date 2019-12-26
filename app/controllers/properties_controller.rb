@@ -15,10 +15,7 @@ class PropertiesController < ApplicationController
   # GET /properties/new
   def new
     @property = Property.new
-<<<<<<< HEAD
     @station = @property.stations.build
-=======
->>>>>>> 66b6dc6... scaffoldによる物件登録機能の作成
   end
 
   # GET /properties/1/edit
@@ -73,10 +70,7 @@ class PropertiesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def property_params
-<<<<<<< HEAD
       params.require(:property).permit(:name, :rent, :address, :old, :description, stations_attributes: [:line_name, :sta_name, :minute_on_foot, :id])
-=======
       params.require(:property).permit(:name, :rent, :address, :old, :description)
->>>>>>> 66b6dc6... scaffoldによる物件登録機能の作成
     end
 end
