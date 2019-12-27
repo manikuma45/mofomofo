@@ -10,11 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2019_12_26_105241) do
-=======
 ActiveRecord::Schema.define(version: 2019_12_26_094512) do
->>>>>>> 66b6dc6... scaffoldによる物件登録機能の作成
 
   create_table "properties", force: :cascade do |t|
     t.string "name", null: false
@@ -26,7 +23,6 @@ ActiveRecord::Schema.define(version: 2019_12_26_094512) do
     t.datetime "updated_at", null: false
   end
 
-<<<<<<< HEAD
   create_table "stations", force: :cascade do |t|
     t.string "line_name", null: false
     t.string "sta_name", null: false
@@ -37,6 +33,5 @@ ActiveRecord::Schema.define(version: 2019_12_26_094512) do
     t.index ["property_id"], name: "index_stations_on_property_id"
   end
 
-=======
->>>>>>> 66b6dc6... scaffoldによる物件登録機能の作成
+end
 end
