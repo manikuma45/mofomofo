@@ -10,8 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_26_105241) do
-ActiveRecord::Schema.define(version: 2019_12_26_094512) do
+ActiveRecord::Schema.define(version: 2020_01_05_013938) do
 
   create_table "properties", force: :cascade do |t|
     t.string "name", null: false
@@ -33,5 +32,4 @@ ActiveRecord::Schema.define(version: 2019_12_26_094512) do
     t.index ["property_id"], name: "index_stations_on_property_id"
   end
 
-end
 end
